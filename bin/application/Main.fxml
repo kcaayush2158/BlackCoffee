@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="842.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <bottom>
+      <HBox prefHeight="132.0" prefWidth="842.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="45.0" prefWidth="842.0" style="-fx-background-color: white;">
+               <children>
+                  <JFXSlider fx:id="seeslider" prefHeight="60.0" prefWidth="842.0">
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </JFXSlider>
+                  <HBox prefHeight="57.0" prefWidth="842.0">
+                     <children>
+                        <JFXButton fx:id="btnOpenFile" onAction="#openFile" prefHeight="63.0" prefWidth="150.0" ripplerFill="#fcfcfc" style="-fx-background-color: white;" styleClass="btnOpenFile" stylesheets="@application.css" text="." textFill="#3d5aae" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="0.1" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" right="159.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnPlay" onAction="#playVideo" prefHeight="56.0" prefWidth="150.0" ripplerFill="#fcfcfc" style="-fx-background-color: white;" stylesheets="@application.css" text="." textFill="#3d5aae">
+                           <font>
+                              <Font size="0.1" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnPause" onAction="#pauseVideo" prefHeight="55.0" prefWidth="150.0" ripplerFill="#fcfcfc" style="-fx-background-color: white;" stylesheets="@application.css" text="." textFill="#3d5aae" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="0.1" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="100.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnSlower" onAction="#slowerVideo" prefHeight="56.0" prefWidth="150.0" ripplerFill="#fcfcfc" style="-fx-background-color: white;" stylesheets="@application.css" text="." textFill="#3d5aae">
+                           <font>
+                              <Font size="0.1" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="btnSlow" onAction="#slowVideo" prefHeight="56.0" prefWidth="150.0" ripplerFill="#fcfcfc" style="-fx-background-color: white;" stylesheets="@application.css" text="." textFill="#3d5aae">
+                           <font>
+                              <Font size="0.1" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnPlay" onAction="#fastVideo" prefHeight="56.0" prefWidth="150.0" ripplerFill="#fcfcfc" style="-fx-background-color: white;" stylesheets="@application.css" text="." textFill="#3d5aae">
+                           <font>
+                              <Font size="0.1" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="btnFaster" onAction="#fasterVideo" prefHeight="56.0" prefWidth="150.0" ripplerFill="#fcfcfc" style="-fx-background-color: white;" stylesheets="@application.css" text="." textFill="#3d5aae">
+                           <font>
+                              <Font size="0.1" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="40.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXSlider fx:id="slider" prefHeight="14.0" prefWidth="272.0">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                        </JFXSlider>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <StackPane prefHeight="473.0" prefWidth="836.0" BorderPane.alignment="CENTER">
+         <children>
+            <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" />
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

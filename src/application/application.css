@@ -1,0 +1,53 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#btnPlay{
+    -fx-background-image: url("../images/play.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-position:center;
+    -fx-background-size:30 30;
+    -fx-background-color:transparent;
+    
+
+}
+#btnPause{
+    -fx-background-image: url("../images/pause.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-position:center;
+    -fx-background-size:30 30;
+    -fx-background-color:transparent;
+}
+#btnOpenFile{
+    -fx-background-image: url("../images/folder.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-position:center;
+    -fx-background-size:30 30;
+    -fx-background-color:transparent;
+}
+
+#btnSlower{
+    -fx-background-image: url("../images/slower.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-position:center;
+    -fx-background-size:30 30;
+    -fx-background-color:transparent;
+}
+#btnSlow{
+    -fx-background-image: url("../images/slow.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-position:center;
+    -fx-background-size:30 30;
+    -fx-background-color:transparent;
+}
+#btnFast{
+    -fx-background-image: url("../images/fast.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-position:center;
+    -fx-background-size:30 30;
+    -fx-background-color:transparent;
+}
+#btnFaster{
+    -fx-background-image: url("../images/faster.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-position:center;
+    -fx-background-size:30 30;
+    -fx-background-color:transparent;
+}
